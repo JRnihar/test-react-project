@@ -1,33 +1,4 @@
-# DELPHINUS-SHOP
 
-This is my projects link
-
- [https://assigment-10-ce427.firebaseapp.com/]
- <!-- (https://assigment-10-ce427.firebaseapp.com/). -->
-
-### Add technology 
-- React js
-- firebase  and react-firebase-hook for authentication
-- React Router for Rout
-- Bootstrap and React-bootstrap for css farm Work
-- For More Attractive use plain Css
-- node js
-- express-js
-- mongodb
-- heroku
-
-## Feature
-- This web site have a strong security by using firebase log in system.
-- You can See you home page without sing up and log in
-- But this web site have 4 more rout which is private.
-- Also you can manage your Item.
-- And Add new product..
-- And also See What you are Add ...
-
-
-
-
-## Available Scripts
 
 In the project directory, you can run:
 
