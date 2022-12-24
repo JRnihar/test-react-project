@@ -28,20 +28,20 @@ const Header = () => {
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="ms-auto">
-                            <Nav.Link className='text-dark' as={CustomLink} to="/">Home</Nav.Link>
-                            <Nav.Link className='text-dark' as={CustomLink} to="about">About</Nav.Link>
-                            <Nav.Link className='text-dark' as={CustomLink} to="contact_us">Contact us</Nav.Link>
+                            <Nav.Link className='text-dark nav-link nav-link-ltr' as={CustomLink} to="/">Home</Nav.Link>
+                            <Nav.Link className='text-dark nav-link nav-link-ltr' as={CustomLink} to="about">About US</Nav.Link>
+                            <Nav.Link className='text-dark nav-link nav-link-ltr' as={CustomLink} to="contact_us">Contact us</Nav.Link>
                             {
                                     
                                 user && <>
-                                    <Nav.Link className='text-dark' as={CustomLink} to="Service">Service</Nav.Link>
+                                    <Nav.Link className='text-dark nav-link nav-link-ltr ' as={CustomLink} to="Service">Service</Nav.Link>
                                 </>
                             }
                             {
                                 user
                                 ?
-                                    <button onClick={handleSignOut} className='btn btn-primary rounded-pill ms-3'><i class="fa-solid fa-arrow-right-from-bracket"></i> LogOut</button>
-                                   : <Nav.Link className='text-dark' as={CustomLink} to="/login"><button className='btn btn-primary rounded-pill ms-3'> <i class="fa-solid fa-right-to-bracket me-2"></i> Login</button></Nav.Link>    
+                                    <button onClick={handleSignOut} className='ms-3'><i class="fa-solid fa-arrow-right-from-bracket"></i> LogOut</button>
+                                   : <Nav.Link className='text-dark' as={CustomLink} to="/login"><button className='  ms-3'> <i class="fa-solid fa-right-to-bracket me-2"></i> Login</button></Nav.Link>    
                             }
                         
                         </Nav>
