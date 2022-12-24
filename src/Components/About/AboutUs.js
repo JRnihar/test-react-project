@@ -1,5 +1,6 @@
 import React from 'react';
 import './AboutUS.css'
+import cartoon_img from '../../images/woman-cartoon-character-portrait-brunette-female-round-line-icon-free-vector.jpg'
 
 const AboutUs = () => {
     return (
@@ -57,7 +58,7 @@ const AboutUs = () => {
 
                         <div class="col-lg-6">
                             <div class="member d-flex align-items-start">
-                                <div class="pic"><img src="https://www.pngfind.com/pngs/m/467-4675403_png-file-blank-person-transparent-png.png" class="img-fluid" alt=""/></div>
+                                <div class="pic"><img src={cartoon_img} class="img-fluid" alt=""/></div>
                                 <div class="member-info">
                                     <p class="member-heading">John Doe</p>
                                     <span>Chief Executive Officer</span>
@@ -74,7 +75,7 @@ const AboutUs = () => {
 
                         <div class="col-lg-6 mt-4 mt-lg-0">
                             <div class="member d-flex align-items-start">
-                                <div class="pic"><img src="https://www.pngfind.com/pngs/m/467-4675403_png-file-blank-person-transparent-png.png" class="img-fluid" alt=""/></div>
+                                <div class="pic"><img src={cartoon_img} class="img-fluid" alt=""/></div>
                                 <div class="member-info">
                                     <p class="member-heading">Jane Doe</p>
                                     <span>Product Manager</span>
@@ -91,7 +92,7 @@ const AboutUs = () => {
 
                         <div class="col-lg-6 mt-4">
                             <div class="member d-flex align-items-start">
-                                <div class="pic"><img src="https://www.pngfind.com/pngs/m/467-4675403_png-file-blank-person-transparent-png.png" class="img-fluid" alt=""/></div>
+                                <div class="pic"><img src={cartoon_img} class="img-fluid" alt=""/></div>
                                 <div class="member-info">
                                     <p class="member-heading">John Doe</p>
                                     <span>CTO</span>
@@ -108,7 +109,7 @@ const AboutUs = () => {
 
                         <div class="col-lg-6 mt-4">
                             <div class="member d-flex align-items-start">
-                                <div class="pic"><img src="https://www.pngfind.com/pngs/m/467-4675403_png-file-blank-person-transparent-png.png" class="img-fluid" alt=""/></div>
+                                <div class="pic"><img src={cartoon_img}class="img-fluid" alt=""/></div>
                                 <div class="member-info">
                                     <p class="member-heading">Jane Doe</p>
                                     <span>Accountant</span>

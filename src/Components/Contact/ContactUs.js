@@ -1,5 +1,6 @@
 import React from 'react';
 import './ContactUS.css'
+import contact_img from "../../images/istockphoto-1129113667-612x612.jpg"
 
 const ContactUs = () => {
     return (
@@ -39,8 +40,11 @@ const ContactUs = () => {
                     </div>
 
                     <div class="contacts contact-wrapper">
+                        <div>
+                            <img className='w-75 rounded' src={contact_img} alt="" />
+                        </div>
 
-                        <ul>
+                        <ul className='mt-4'>
                             <li>We've driven online revenues of over <span class="highlight-text-grey">$2
                                 billion</span> for our clients. Ready to know
                                 how we can help you?</li>
