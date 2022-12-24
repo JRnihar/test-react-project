@@ -5,6 +5,7 @@ import { Link, useLocation, useNavigate } from 'react-router-dom';
 import auth from '../../firebase.init';
 import Loading from '../Loading/Loading';
 import SocialLogin from '../SocialLogin/SocialLogin';
+import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 
@@ -27,10 +28,10 @@ const Login = () => {
         navigate(from, { replace: true });
     }
 
-    // const [sendPasswordResetEmail, sending] = useSendPasswordResetEmail(
-    //     auth
-    // );
-    if (loading) {
+    const [sendPasswordResetEmail, sending] = useSendPasswordResetEmail(
+        auth
+    );
+    if (loading || sending) {
         return <Loading></Loading>
     }
     let errorElement;
@@ -61,10 +62,14 @@ const Login = () => {
                         <form onSubmit={handelSubmit}>
                             <div class="all_input">
                                 <input type="text" placeholder="Phone number" />
-                                <input ref={emailRef} type="email" name="email" onChange={(e) => setEmail(e.target.value)} placeholder="Email address" />
+                                <input ref={emailRef} type="email" name="email" onChange={(e) => setEmail(e.target.value)} placeholder="Email address"  required/>
                                 <input ref={passwordRef} type="password" placeholder="Password" />
                             </div>
                             {errorElement}
+                            <button className=' btn btn-link' onClick={async () => {
+                                await sendPasswordResetEmail(email);
+                                toast('Sent email');
+                            }} >Forgot password?</button>
                             <div class="login_btn">
                                 <div class="chack">
                                     <input type="checkbox" />
@@ -75,6 +80,7 @@ const Login = () => {
                         </form>
                     </div>
                     <SocialLogin></SocialLogin>
+                    <ToastContainer></ToastContainer>
                 </div>
             </div>
         </div>

@@ -11,7 +11,7 @@ const ContactUs = () => {
                     <div class="form">
                         <h4>GET IN TOUCH</h4>
                         <h2 class="form-headline">Send us a message</h2>
-                        <form id="submit-form" action="">
+                        <form id="submit-form" className='contact_form' action="">
                             <p>
                                 <input id="name" class="form-input" type="text" placeholder="Your Name*" />
 
