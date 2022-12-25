@@ -67,7 +67,7 @@ const Login = () => {
                                 <PhoneInput
                                     international
                                     countryCallingCodeEditable={false}
-                                    defaultCountry="RU"
+                                    defaultCountry="BD"
                                     value={value}
                                     onChange={setValue} />
                                 <input ref={emailRef} type="email" name="email" onChange={(e) => setEmail(e.target.value)} placeholder="Email address"  required/>
