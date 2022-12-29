@@ -46,8 +46,8 @@ const Register = () => {
                     <div class="input_left">
                         <h1>Welcome to IT world</h1>
                         <div class="log_btn">
-                            <Link to='/login'>     <button class="log">Login</button></Link>
-                            <Link to='/register'>  <button class="sin">Sign up</button></Link>
+                            <Link to='/login'><button class="log">Login</button></Link>
+                              <button class="sin">Signup</button>
                         </div>
                         <form onSubmit={handleSubmit}>
                         <div class="name_box">
@@ -66,7 +66,7 @@ const Register = () => {
                                     <input type="checkbox" />
                                     <p>I agree and accept all </p>
                                 </div>
-                                <button type="submit">Sign up</button>
+                                <button type="submit">Signup</button>
                             </div>
                         </form>
                     </div>

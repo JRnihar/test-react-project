@@ -7,8 +7,8 @@ import Loading from '../Loading/Loading';
 import SocialLogin from '../SocialLogin/SocialLogin';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import PhoneInput from 'react-phone-number-input'
-import 'react-phone-number-input/style.css'
+import PhoneInput from 'react-phone-input-2'
+import 'react-phone-input-2/lib/style.css'
 
 
 
@@ -60,16 +60,17 @@ const Login = () => {
                         <h1>Welcome to IT world</h1>
                         <div class="log_btn">
                             <button class="log">Login</button>
-                            <Link to='/register'>  <button class="sin">Sign up</button></Link> 
+                            <Link to='/register'>  <button class="sin">SignUp</button></Link> 
                         </div>
                         <form onSubmit={handelSubmit}>
                             <div class="all_input">
-                                <PhoneInput
+                               <PhoneInput
+                                    className="mb-4 mt-5"
                                     international
                                     countryCallingCodeEditable={false}
-                                    defaultCountry="BD"
+                                    country={'BD'}
                                     value={value}
-                                    onChange={setValue} />
+                                    onChange={setValue} /> 
                                 <input ref={emailRef} type="email" name="email" onChange={(e) => setEmail(e.target.value)} placeholder="Email address"  required/>
                                 <input ref={passwordRef} type="password" placeholder="Password" />
                             </div>

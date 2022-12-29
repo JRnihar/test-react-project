@@ -26,24 +26,7 @@ const SocialLogin = () => {
 
    
     return (
-        // <div>
-        //     {errorElement}
-        //     <div class="text-center">
-        //         <p>or sign up with:</p>
-                
-
-        //         <button onClick={() => signInWithGoogle()} type="button" class="btn btn-link btn-floating mx-1">
-        //             <i class="fab fa-google"></i>
-        //         </button>
-
-        //         <button onClick={() => signInWithGithub()} type="button" class="btn btn-link btn-floating mx-1">
-        //             <i class="fab fa-github"></i>
-        //         </button>
-
-                
-        //     </div>
-            
-        // </div>
+      
         <div class="input_right">
             {errorElement}
             <h5>Sing up using social media</h5>
@@ -51,11 +34,11 @@ const SocialLogin = () => {
         
                 <button class="gl">
                     <i class="fa-brands fa-google"></i>
-                    <span onClick={() => signInWithGoogle()}>Sin up with google</span>
+                    <span onClick={() => signInWithGoogle()}>Sinup with google</span>
                 </button>
                 <button class="ap">
                     <i class="fa-brands fa-github"></i>
-                    <span onClick={() => signInWithGithub()}>Sin up with Github</span>
+                    <span onClick={() => signInWithGithub()}>Sinup with Github</span>
                 </button>
             </div>
         </div>
